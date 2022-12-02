@@ -17,6 +17,8 @@ This is the Rock Paper Scissors game with an extra twist.
 - Spock **vaporizes** Rock
 - Rock **crushes** Scissors
 
+### In order to play, click the link and press F12 on your keyboard or right click to inspect the website. Open the Console tab.
+https://snuggletrouble.github.io/brainnest-1st-javascript-project/
 
 ## Requirements of the project are:
 - The game is played in the console. **NO HTML, CSS or DOM manipulation is allowed**
