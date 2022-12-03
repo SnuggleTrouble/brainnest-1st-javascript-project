@@ -1,7 +1,7 @@
 let playerScore = 0;
 let computerScore = 0;
 alert(
-  "Welcome to SnuggleTrouble's Rock Paper Scissors Lizard Spock game. The first one to reach 5 points wins. Good luck!"
+  "Welcome to SnuggleTrouble's Rock Paper Scissors Lizard Spock game. You play against the Computer. The first one to reach 5 points wins. Good luck!"
 );
 
 function computerPlay() {
