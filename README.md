@@ -4,7 +4,7 @@ This is the 1st javascript project at Brainnest.
 
 This is the Rock Paper Scissors game with an extra twist.
 
-#Rock | Paper | Scissors | Lizard | Spock
+# Rock | Paper | Scissors | Lizard | Spock
 ## The rules are simple:
 - Scissors **cut** Paper
 - Paper **covers** Rock
