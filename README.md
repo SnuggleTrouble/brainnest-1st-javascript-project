@@ -4,6 +4,7 @@ This is the 1st javascript project at Brainnest.
 
 This is the Rock Paper Scissors game with an extra twist.
 
+# Rock | Paper | Scissors | Lizard | Spock
 ## The rules are simple:
 - Scissors **cut** Paper
 - Paper **covers** Rock
@@ -16,8 +17,12 @@ This is the Rock Paper Scissors game with an extra twist.
 - Spock **vaporizes** Rock
 - Rock **crushes** Scissors
 
+### In order to play, click the link and press F12 on your keyboard or right click to inspect the website. Open the Console tab.
+https://snuggletrouble.github.io/brainnest-1st-javascript-project/
+**PS** If nothing happens, try refreshing the page.
 
-## Requirements of the game are:
+## Requirements of the project are:
+- The game is played in the console. **NO HTML, CSS or DOM manipulation is allowed**
 - The game should stop whenever the player or computer reaches 5 points.
 - The game will continue for as longs as necessary until either wins.
 - Any spelling mistakes are taken into account.
