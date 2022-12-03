@@ -1,8 +1,6 @@
 let playerScore = 0;
 let computerScore = 0;
-alert(
-  "Welcome to SnuggleTrouble's Rock Paper Scissors Lizard Spock game. You play against the Computer. The first one to reach 5 points wins. Good luck!"
-);
+alert("Welcome to SnuggleTrouble's Rock Paper Scissors Lizard Spock game. You play against the Computer. The first one to reach 5 points wins. Good luck!");
 
 function computerPlay() {
   const computerSelection = Math.floor(Math.random() * 5) + 1;
@@ -20,10 +18,8 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection) {
-  let playerInput = prompt(
-    "Do you choose Rock | Paper | Scissors | Lizard | Spock?"
-  );
-  playerSelection = playerInput.toLowerCase();
+  let playerInput = prompt("Do you choose Rock | Paper | Scissors | Lizard | Spock?");
+  playerSelection = playerInput.toLowerCase().trim();
   computerSelection = computerPlay();
   /* ------------------------- Player Wins ------------------------- */
   if (playerSelection === "rock" && computerSelection === "scissors") {
