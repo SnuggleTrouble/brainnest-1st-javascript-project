@@ -25,8 +25,7 @@ function playRound(playerSelection, computerSelection) {
   );
   playerSelection = playerInput.toLowerCase();
   computerSelection = computerPlay();
-
-  // Player Wins
+  /* ------------------------- Player Wins ------------------------- */
   if (playerSelection === "rock" && computerSelection === "scissors") {
     playerScore++;
     return alert("You win! The Computer chose Scissors. Rock crushes Scissors");
@@ -57,8 +56,7 @@ function playRound(playerSelection, computerSelection) {
   } else if (playerSelection === "spock" && computerSelection === "rock") {
     playerScore++;
     return alert("You win! The Computer chose Rock. Spock vaporizes Rock");
-
-    // Computer Wins
+    /* ------------------------- Computer Wins ------------------------- */
   } else if (playerSelection === "rock" && computerSelection === "paper") {
     computerScore++;
     return alert("You lose! The Computer chose Paper. Paper covers Rock");
@@ -89,13 +87,11 @@ function playRound(playerSelection, computerSelection) {
   } else if (playerSelection === "spock" && computerSelection === "lizard") {
     computerScore++;
     return alert("You lose! The Computer chose Lizard. Lizard poisons Spock");
-  } 
-    // Tie
-    else if (playerSelection === computerSelection) {
+  } else if (playerSelection === computerSelection) {
+    /* ------------------------------ Tie ------------------------------ */
     return alert(`It's a tie! The computer chose ${playerSelection} too.`);
-  } 
-    // Error
-    else {
+  } else {
+    /* ------------------------------ Error ------------------------------ */
     alert("Something went wrong. Did you spell it correctly?");
   }
 }
