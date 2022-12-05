@@ -19,7 +19,7 @@ This is the Rock Paper Scissors game with an extra twist.
 
 ### In order to play, click the link and press F12 on your keyboard or right click to inspect the website. Open the Console tab.
 https://snuggletrouble.github.io/brainnest-1st-javascript-project/
-**PS** If nothing happens, try refreshing the page.
+**PS** If nothing happens or the console doesn't update, try refreshing the page.
 
 ## Requirements of the project are:
 - The game is played in the console. **NO HTML, CSS or DOM manipulation is allowed**
