@@ -24,6 +24,6 @@ https://snuggletrouble.github.io/brainnest-1st-javascript-project/
 ## Requirements of the project are:
 - The game is played in the console. **NO HTML, CSS or DOM manipulation is allowed**
 - The game should stop whenever the player or computer reaches 5 points.
-- The game will continue for as longs as necessary until either wins.
-- Any spelling mistakes are taken into account.
+- The game will continue until either the player or computer wins.
+- Spelling mistakes are taken into account.
 - Wrong words will not be accepted, and the score will not update.
