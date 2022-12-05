@@ -1,28 +1,28 @@
 let playerScore = 0;
 let computerScore = 0;
-alert("Welcome to SnuggleTrouble's Rock Paper Scissors Lizard Spock game. You play against the Computer. The first one to reach 5 points wins. Good luck!");
+const options = ["rock", "paper", "scissors", "lizard", "spock"];
 
-function computerPlay() {
-  const computerSelection = Math.floor(Math.random() * 5) + 1;
-  if (computerSelection === 1) {
-    return "rock";
-  } else if (computerSelection === 2) {
-    return "paper";
-  } else if (computerSelection === 3) {
-    return "scissors";
-  } else if (computerSelection === 4) {
-    return "lizard";
-  } else if (computerSelection === 5) {
-    return "spock";
-  }
+alert(
+  "Welcome to SnuggleTrouble's Rock Paper Scissors Lizard Spock game. You play against the Computer. The first one to reach 5 points wins. Good luck! PS. The Game will reset if you click cancel."
+);
+
+function computerChoice() {
+  return options[Math.floor(Math.random() * options.length)];
 }
 
 function playRound(playerSelection, computerSelection) {
   let playerInput = prompt("Do you choose Rock | Paper | Scissors | Lizard | Spock?");
-  playerSelection = playerInput.toLowerCase().trim();
-  computerSelection = computerPlay();
-  /* ------------------------- Player Wins ------------------------- */
+  if (!playerInput) {
+    window.location.reload();
+  }
+  playerSelection = playerInput.toLocaleLowerCase().trim();
+  while (!options.includes(playerSelection)) {
+    alert("Something went wrong. Did you spell it correctly?");
+    return playerInput;
+  }
+  computerSelection = computerChoice();
   if (playerSelection === "rock" && computerSelection === "scissors") {
+    /* ------------------------- Player Wins ------------------------- */
     playerScore++;
     return alert("You win! The Computer chose Scissors. Rock crushes Scissors");
   } else if (playerSelection === "paper" && computerSelection === "rock") {
@@ -88,12 +88,12 @@ function playRound(playerSelection, computerSelection) {
     return alert(`It's a tie! The computer chose ${playerSelection} too.`);
   } else {
     /* ------------------------------ Error ------------------------------ */
-    alert("Something went wrong. Did you spell it correctly?");
+    return alert("Something went wrong. Did you spell it correctly?");
   }
 }
 
 function game() {
-  for (let i = 0; i <= 50; i++) {
+  for (let i = 0; i <= 15; i++) {
     playRound();
     console.log("Player Score:" + playerScore);
     console.log("Computer Score:" + computerScore);
