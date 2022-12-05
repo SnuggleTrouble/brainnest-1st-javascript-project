@@ -1,17 +1,20 @@
-let playerScore = 0;
-let computerScore = 0;
-const options = ["rock", "paper", "scissors", "lizard", "spock"];
-
+window.location.reload();
 alert(
   "Welcome to SnuggleTrouble's Rock Paper Scissors Lizard Spock game. You play against the Computer. The first one to reach 5 points wins. Good luck! PS. The Game will reset if you click cancel."
 );
+
+let playerScore = 0;
+let computerScore = 0;
+const options = ["rock", "paper", "scissors", "lizard", "spock"];
 
 function computerChoice() {
   return options[Math.floor(Math.random() * options.length)];
 }
 
 function playRound(playerSelection, computerSelection) {
-  let playerInput = prompt("Do you choose Rock | Paper | Scissors | Lizard | Spock?");
+  let playerInput = prompt(
+    "Do you choose Rock | Paper | Scissors | Lizard | Spock?"
+  );
   if (!playerInput) {
     window.location.reload();
   }
