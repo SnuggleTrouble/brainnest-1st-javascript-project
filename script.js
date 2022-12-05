@@ -1,4 +1,3 @@
-window.location.reload();
 alert(
   "Welcome to SnuggleTrouble's Rock Paper Scissors Lizard Spock game. You play against the Computer. The first one to reach 5 points wins. Good luck! PS. The Game will reset if you click cancel."
 );
